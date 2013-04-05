@@ -10,168 +10,299 @@
 	margin: 0;
 	padding: 0;
 }
+
+::selection {
+	background-color: #424954;
+	color: #eee;
+}
+
+a {
+	color: #0084b4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 body {
 	font-family:  "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-	background: rgb(56, 56, 56) url(img/wild_oliva.png);
+	background: rgb(56, 56, 56) url(img/random_grey_variations.png);
 	font-size: 60%;
 }
+
 .width {
 	width: 820px;
 	padding: 10px 0;
 	margin: auto;
 }
+
 .clearfix {
 	overflow:hidden;
 	_zoom:1;
 }
+
 .main {
 	background: url(img/linedpaper.png);
 	box-shadow: 0 0 6px #fff;
 	padding-bottom: 60px;
 }
+
 .info {
 	float: left;
 }
+
 	.info h1 {
 		color: #454545;
 		font-size: 3.2em;
 		margin-bottom: 6px;
 	}
+
 	.info h3 {
 		color: #777;
 		font-weight: normal;
 		font-size: 2em;
 		margin-bottom: 10px;
 	}
+
 	.info small {
 		color: #656565;
 		font-size: 1.4em;
 		display: block;
 		margin-bottom: 6px;
 	}
+
 .photo {
 	float: right;
+	background: url(img/me.png) no-repeat;
 }
+
+.container section{
+	width: 47.5%;
+	float: left;
+}
+
 .section,.header {
 	margin:10px;
 }
+
+.section {
+	position: relative;
+}
+
 	.section h2 {
 		color: #484848;
 		font-size: 2.5em;
 		margin-bottom: 10px;
+		padding: 10px 0;
+		border-bottom: 1px solid #484848;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
 	}
+
 	.section  h3 {
 		color: #606060;
 		font-size: 1.8em;
 		padding-left: 10px;
 	}
+
 	.section p {
 		color: #565656;
 		font-size: 1.6em;
 		line-height: 1.6em;
 		margin-bottom: 15px;
-		padding-left: 35px;
+		padding: 0 10px 0 35px;
 	}
-	.section .skill {
-		margin-left: 35px;
-		list-style-type: none;
-		margin-bottom: 5px;
-		color: #000;
-		font-size: 1.6em;
-		line-height: 2.3em;
-		border: 1px rgba(0,0,0,.2) solid;
+
+	.section ul {
+		margin: 10px 30px;
 	}
-		.skill_level {
-			padding-left: 20px;
-			background: #A0C7FF;
-			background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-			background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-			background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-			background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-			-webkit-background-size: 40px 40px;
-			-moz-background-size: 40px 40px;
-			-o-background-size: 40px 40px;
-			background-size: 40px 40px;
+		
+		.section li:last-child {
+			list-style: none;
 		}
-		.skill:hover .skill_level {
-			opacity: 1 !important;
-		}
-.foot {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-}
-	.footbox {
-		position: relative;
-		text-align: center;
-		background: #eee;
-		box-shadow: 0px 2px 10px #333;
+
+			.section li h5 {
+				font-size: 1.8em;
+				font-weight: normal;
+			}
+
+			.section li p {
+				margin: 5px 0;
+				font-size: 1.5em;
+			}
+
+			.section li strong {
+				font-size: 1.5em;
+				line-height: 2em;
+			}
+
+	.section .skills {
+		margin: 20px 10px;
 	}
-.line{
-    height: 1px;
-    border-top: 1px solid #ddd;
-    text-align: center;
+
+		@-webkit-keyframes progress30 {
+			0% {border-width: 0;}
+			100% {border-width: 150px;}
+		}
+
+		@-webkit-keyframes progress50 {
+			0% {border-width: 0;}
+			100% {border-width: 250px;}
+		}
+
+		@-webkit-keyframes progress60 {
+			0% {border-width: 0;}
+			100% {border-width: 300px;}
+		}
+
+		@-webkit-keyframes progress70 {
+			0% {border-width: 0;}
+			100% {border-width: 350px;}
+		}
+
+		.section .skills p {
+			margin: 10px;
+			-webkit-transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-ms-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+		}
+
+		.progress_30 {
+			border-left: 150px solid #ec7063;
+			-webkit-animation: progress30 2s ease-out;
+			-moz-animation: progress30 2s ease-out 0s;
+		}
+
+		.progress_50 {
+			border-left: 250px solid #f4d03f;
+			-webkit-animation: progress50 2s ease-out;
+			-moz-animation: progress50 2s ease-out 0s;
+		}
+
+		.progress_60 {
+			border-left: 300px solid #2fe2bf;
+			-webkit-animation: progress60 2s ease-out;
+			-moz-animation: progress60 2s ease-out 0s;
+		}
+
+		.progress_70 {
+			border-left: 350px solid #4e6d8d;
+			-webkit-animation: progress70 2s ease-out;
+			-moz-animation: progress70 2s ease-out 0s;
+		}
+
+@media only screen and (min-width: 820px) {
+
+	.section:hover h2 {
+		padding-left: 40px;
+	}
+
+	.section .skills p:hover {
+		padding-left: 20px;
+	}
 }
-.line span{
-    position: relative;
-    top: -8px;
-    background: #fff;
-    padding: 0 20px;
-}
-#message {
-	text-align: center;
-	font-weight: 700;
-}
+
 @media only screen and (max-width: 820px) {
+
 	.info {
 	 	float: none; 
-	 	display: block; 
+	 	display: block;
 	 	text-align: center; 
 	 }
+
 	.photo {
 		float: none;
 		display: block;
+		margin: 10px auto; 
 		text-align: center;
-	}	
+	}
+
 	.info h1 { 
 		font-size: 4.5em; 
 	}
+
 	.info h3 { 
 		font-size: 2.2em; 
 	}
+
+	.container section {
+		width: 100%;
+	}
+
 	.section h2 { 
 		display: block; 
 		text-align: center; 
 	}
+
 	.section p {
 		padding: 0; 
 	}
-	.section .skill {
-		margin-left: 0;
+
+	.section .skills p {
+		font-size: 1.4em;
+		padding-left: 10px;
 	}
+
+	.section .skills p:hover {
+		padding-left: 25px;
+	}
+
 	.width {
 		margin: auto;
 		width: 100%;
 	}
 
 }
-@media only screen and (max-width: 570px) {
-	.section .skill {
-		font-size: 1.4em;
-	}
-	.skill_level {
-		padding-left: 10px;
-	}
-	.foot {
-		position: static;
+@media only screen and (max-width: 600px) {
+
+	@-webkit-keyframes progress30 {
+		0% {border-width: 0;}
+		100% {border-width: 90px;}
 	}
 
-}
-@media only screen and (max-width: 480px) {
-	.section .skill {
+	@-webkit-keyframes progress50 {
+		0% {border-width: 0;}
+		100% {border-width: 150px;}
+	}
+
+	@-webkit-keyframes progress60 {
+		0% {border-width: 0;}
+		100% {border-width: 180px;}
+	}
+
+	@-webkit-keyframes progress70 {
+		0% {border-width: 0;}
+		100% {border-width: 210px;}
+	}
+
+	.section .skills p {
+		padding-left: 5px;
 		font-size: 1.2em;
 	}
-	.skill_level {
-		padding-left: 0;
+
+	.section .skills p:hover {
+		padding-left: 15px;
+	}
+
+	.progress_30 {
+		border-left: 90px solid #ec7063;
+	}
+
+	.progress_50 {
+		border-left: 150px solid #f4d03f;
+	}
+
+	.progress_60 {
+		border-left: 180px solid #2fe2bf;
+	}
+
+	.progress_70 {
+		border-left: 210px solid #4e6d8d;
 	}
 }
